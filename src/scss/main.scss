@@ -1,0 +1,12 @@
+@import "./generic/reset";
+
+@import "./settings/colors";
+@import "./settings/mixins";
+@import "./settings/fonts";
+
+@import "./elements/base";
+@import "./elements/buttons";
+
+@import "./sections/header";
+@import "./sections/main";
+@import "./sections/footer";

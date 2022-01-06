@@ -1,0 +1,60 @@
+.header {
+  &--wrapper__nav {
+    background: linear-gradient(108deg, $color-gray-light 50%, $color-gray-middle 50%);
+    border-bottom: 1px solid $color-border;
+  }
+  &--wrapper__home {
+    background-color: $color-gray-lightest;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4px 0 48px;
+    background-color: $color-gray-lighter;
+    &__list {
+      display: flex;
+      &__element {
+        padding: 11.5px 20px;
+        &__link {
+          color: $color-gray-dark;
+        }
+      }
+    }
+    &__panel {
+      display: flex;
+      &__element {
+        &__register {
+          padding: 11.5px 27.5px;
+          background-color: $color-gray-middle;
+        }
+        &__login {
+          padding: 11.5px 27.5px;
+          background-color: $color-gray-dark;
+          a {
+            color: $color-text-white;
+          }
+        }
+      }
+    }
+  }
+  &__home {
+    &__list {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      height: 30px;
+      &__element {
+        &__home {
+          color: $color-text-accent;
+          text-decoration: underline;
+          margin-right: 3px;
+        }
+        &__login {
+          color: $color-gray-dark;
+        }
+      }
+    }
+  }
+}
