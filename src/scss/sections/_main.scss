@@ -1,3 +1,102 @@
 .main {
   height: calc(100vh - 80px - 75px);
+  display: flex;
+  align-items: center;
+
+  &--wrapper {
+    margin: 0 30px 54px 30px;
+  }
+
+  h1 {
+    margin-left: 20px;
+    font-size: 3.8rem;
+    line-height: 50px;
+    &::after {
+      content: "";
+      height: 5px;
+      width: 75px;
+      display: block;
+      margin-top: -9px;
+      background-color: $color-border-accent;
+    }
+  }
+  h2 {
+    font-size: 1.8rem;
+    line-height: 24px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+  }
+  &__box {
+    position: relative;
+    background-color: $color-main-lightest;
+    border: 1px solid $color-border-light;
+    border-radius: 5px;
+    display: flex;
+
+    &__login {
+      margin: 20px;
+      padding: 22px;
+      border-radius: 5px;
+      background-color: $color-main-light;
+      opacity: 94%;
+      &__form {
+        display: flex;
+        flex-direction: column;
+        label {
+          font-size: 1.8rem;
+          padding-bottom: 20px;
+        }
+        input {
+          width: 715px;
+          height: 54px;
+          font-size: 1.8rem;
+          border: none;
+          border-radius: 5px;
+          border-top: 2px solid rgba(150, 150, 150, 0.4);
+          border-left: 2px solid rgba(150, 150, 150, 0.4);
+          margin-bottom: 20px;
+        }
+        &__submit {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a {
+            color: $color-gray-dark;
+            font-size: 1.8rem;
+            font-weight: 400;
+            &:hover {
+              color: $color-text-dark;
+              text-decoration: underline;
+            }
+          }
+          button {
+            width: 398px;
+          }
+        }
+      }
+    }
+    &__register {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.8rem;
+      button {
+        margin: 20px 90px 0 55px;
+        width: 236px;
+      }
+    }
+
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      background-color: $color-border-accent;
+      right: 60px;
+      top: -38px;
+      width: 292px;
+      height: 560px;
+      transform: skew(0, -7deg);
+    }
+  }
 }

@@ -1,0 +1,14 @@
+.btn {
+  border: none;
+  background-color: $color-gray-dark;
+  color: $color-text-white;
+  border-radius: 5px;
+  height: 54px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  &:hover {
+    background-color: $color-border-accent;
+    transition: 0.4s;
+  }
+}

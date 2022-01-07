@@ -11,14 +11,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 4px 0 48px;
+    margin: 0 34px 0 78px;
     background-color: $color-gray-lighter;
     &__list {
       display: flex;
       &__element {
-        padding: 11.5px 20px;
+        padding: 2px 0;
         &__link {
+          padding: 9.5px 20px;
           color: $color-gray-dark;
+          &:hover {
+            color: black;
+            border-bottom: 3px solid $color-border-accent;
+          }
         }
       }
     }
@@ -28,12 +33,24 @@
         &__register {
           padding: 11.5px 27.5px;
           background-color: $color-gray-middle;
+          &:hover {
+            background-color: $color-border-accent;
+            transition: 0.4s;
+            a {
+              color: white;
+              transition: 0.4s;
+            }
+          }
         }
         &__login {
           padding: 11.5px 27.5px;
           background-color: $color-gray-dark;
           a {
             color: $color-text-white;
+          }
+          &:hover {
+            background-color: $color-border-accent;
+            transition: 0.4s;
           }
         }
       }
@@ -43,16 +60,22 @@
     &__list {
       display: flex;
       align-items: center;
-      margin-left: 10px;
+      margin: 0 30px 0 40px;
       height: 30px;
       &__element {
         &__home {
           color: $color-text-accent;
           text-decoration: underline;
           margin-right: 3px;
+          &:hover {
+            color: $color-gray-middle;
+          }
         }
         &__login {
           color: $color-gray-dark;
+          &:hover {
+            color: $color-gray-middle;
+          }
         }
       }
     }
