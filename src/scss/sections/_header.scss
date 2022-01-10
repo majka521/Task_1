@@ -61,8 +61,8 @@
       display: flex;
       align-items: center;
       margin: 0 30px 0 40px;
-      height: 30px;
       &__element {
+        line-height: 3rem;
         &__home {
           color: $color-text-accent;
           text-decoration: underline;

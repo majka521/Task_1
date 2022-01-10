@@ -1,16 +1,16 @@
 .main {
-  height: calc(100vh - 80px - 75px);
+  height: calc(100vh - 9.2vh - 75px);
   display: flex;
   align-items: center;
 
   &--wrapper {
-    margin: 0 30px 54px 30px;
+    margin: 30px 0 84px;
   }
 
   h1 {
     margin-left: 20px;
     font-size: 3.8rem;
-    line-height: 50px;
+    line-height: 5rem;
     &::after {
       content: "";
       height: 5px;
@@ -22,7 +22,7 @@
   }
   h2 {
     font-size: 1.8rem;
-    line-height: 24px;
+    line-height: 2.4rem;
     padding-bottom: 30px;
     margin-left: 20px;
   }
@@ -34,11 +34,13 @@
     display: flex;
 
     &__login {
-      margin: 20px;
+      margin: 20px 0 20px 20px;
       padding: 22px;
       border-radius: 5px;
       background-color: $color-main-light;
       opacity: 94%;
+      width: 56vw;
+      max-width: 715px;
       &__form {
         display: flex;
         flex-direction: column;
@@ -47,8 +49,8 @@
           padding-bottom: 20px;
         }
         input {
-          width: 715px;
-          height: 54px;
+          height: 6.5vh;
+          max-height: 54px;
           font-size: 1.8rem;
           border: none;
           border-radius: 5px;
@@ -70,7 +72,9 @@
             }
           }
           button {
-            width: 398px;
+            margin-left: 10px;
+            width: 34.2vw;
+            max-width: 398px;
           }
         }
       }
@@ -79,11 +83,15 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: center;
+      align-items: center;
       font-size: 1.8rem;
+      margin-right: 20px;
+      width: 30.6vw;
+      max-width: 381px;
       button {
-        margin: 20px 90px 0 55px;
-        width: 236px;
+        margin-top: 20px;
+        width: 20vw;
+        max-width: 236px;
       }
     }
 
@@ -92,10 +100,12 @@
       content: "";
       position: absolute;
       background-color: $color-border-accent;
-      right: 60px;
+      right: 4vw;
       top: -38px;
-      width: 292px;
-      height: 560px;
+      width: 25vw;
+      max-width: 292px;
+      height: 70vh;
+      max-height: 560px;
       transform: skew(0, -7deg);
     }
   }
