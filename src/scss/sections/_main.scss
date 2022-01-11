@@ -3,8 +3,19 @@
   display: flex;
   align-items: center;
 
+  @include tablet {
+    height: auto;
+    min-height: calc(100vh - 9.2vh - 75px);
+  }
+  @include phone {
+    min-height: calc(100vh - 9.2vh - 100px);
+  }
+
   &--wrapper {
-    margin: 30px 0 84px;
+    margin: 20px 0 74px;
+    @include tablet {
+      margin: 30px 0 104px;
+    }
   }
 
   h1 {
@@ -25,6 +36,9 @@
     line-height: 2.4rem;
     padding-bottom: 30px;
     margin-left: 20px;
+    @include notebook {
+      padding-bottom: 15px;
+    }
   }
   &__box {
     position: relative;
@@ -32,6 +46,10 @@
     border: 1px solid $color-border-light;
     border-radius: 5px;
     display: flex;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
 
     &__login {
       margin: 20px 0 20px 20px;
@@ -41,22 +59,42 @@
       opacity: 94%;
       width: 56vw;
       max-width: 715px;
+
+      @include tablet {
+        width: 80vw;
+        margin: 20px;
+      }
       &__form {
         display: flex;
         flex-direction: column;
         label {
           font-size: 1.8rem;
           padding-bottom: 20px;
+          @include notebook {
+            padding-bottom: 10px;
+          }
         }
         input {
-          height: 6.5vh;
-          max-height: 54px;
+          height: 54px;
           font-size: 1.8rem;
           border: none;
           border-radius: 5px;
           border-top: 2px solid rgba(150, 150, 150, 0.4);
           border-left: 2px solid rgba(150, 150, 150, 0.4);
           margin-bottom: 20px;
+
+          @include notebook {
+            height: 35px;
+            margin-bottom: 10px;
+          }
+          @include tablet {
+            height: 35px;
+            margin-bottom: 10px;
+          }
+          @include phone {
+            height: 35px;
+            margin-bottom: 10px;
+          }
         }
         &__submit {
           display: flex;
@@ -75,6 +113,10 @@
             margin-left: 10px;
             width: 34.2vw;
             max-width: 398px;
+            @include notebook {
+              margin-top: 10px;
+              line-height: 3.4rem;
+            }
           }
         }
       }
@@ -88,10 +130,25 @@
       margin-right: 20px;
       width: 30.6vw;
       max-width: 381px;
+
+      @include tablet {
+        width: 80vw;
+        max-width: 715px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 20px 20px;
+        padding: 0 22px;
+      }
+
       button {
         margin-top: 20px;
         width: 20vw;
         max-width: 236px;
+        @include tablet {
+          width: 40vw;
+          max-width: 250px;
+          margin: 0;
+        }
       }
     }
 
@@ -100,13 +157,21 @@
       content: "";
       position: absolute;
       background-color: $color-border-accent;
-      right: 4vw;
+      right: 30px;
       top: -38px;
       width: 25vw;
       max-width: 292px;
-      height: 70vh;
-      max-height: 560px;
+      height: 560px;
       transform: skew(0, -7deg);
+
+      @include notebook {
+        height: 433px;
+      }
+      @include tablet {
+        height: 548px;
+        width: 35vw;
+        max-width: 292px;
+      }
     }
   }
 }

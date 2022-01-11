@@ -13,8 +13,16 @@
     align-items: center;
     margin: 0 34px 0 78px;
     background-color: $color-gray-lighter;
+    @include phone {
+      width: calc(100vw - 34px - 78px);
+      flex-direction: column;
+    }
     &__list {
       display: flex;
+      @include phone {
+        width: 100%;
+        justify-content: space-between;
+      }
       &__element {
         padding: 2px 0;
         &__link {
