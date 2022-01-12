@@ -11,4 +11,10 @@
     background-color: $color-border-accent;
     transition: 0.4s;
   }
+  &-inActive {
+    background-color: $color-gray-light;
+    &:hover {
+      background-color: $color-gray-light;
+    }
+  }
 }
