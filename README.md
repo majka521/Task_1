@@ -2,7 +2,7 @@
 
 ## ![Description icon by Icons8](https://img.icons8.com/dusk/24/000000/document--v1.png) Description
 
-You can see the page **[here](majka521.github.io/task_1/)**.
+You can see the page **[here](https://majka521.github.io/Task_1/)**.
 
 ## ![Tools icon by Icons8](https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/24/000000/external-tools-plumbing-icongeek26-linear-colour-icongeek26.png) Technologies
 
